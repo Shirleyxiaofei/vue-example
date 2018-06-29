@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    #app{
+      font-family: "microsoft yahei";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #666;
+      height: 100%;
+      min-height: 624px;
+      min-width: 1336px;
+    }
+    .errorContent{
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(50%);
+      width: 50%;
+    }
+    .errorContent img{
+      width: 100%;
+    }
+    .errorContent .errorInfo{
+      text-align: center;
+      position: absolute;
+      left: 40%;
+      top: 20%;
+    }
+    .errorContent .errorInfo .errorMsg{
+      display: block;
+      font-size: 1.8em;
+      line-height: 3.6em;
+      color: #48536A;
+    }
+    .errorContent .errorInfo .reback500{
+      display: block;
+      width: 120px;
+      margin: 0 auto;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.2em;
+      line-height: 2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #F7B528;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div class="errorContent">
+    <div><img src="./image/500.png"> <!----></div>
+    <div class="errorInfo">
+      <span class="errorMsg">服务器开小差了</span>
+      <span class="reback500">返回首页</span></div>
+  </div>
+</div>
+</body>
+</html>
+<script>
+  var reback=document.getElementsByClassName('reback500')[0];
+  reback.addEventListener('click',function(){
+    alert('reback')
+  })
+</script>
+

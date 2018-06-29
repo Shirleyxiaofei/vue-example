@@ -1,0 +1,150 @@
+
+.console-main{
+  padding-top:10px;
+}
+.console-title{
+  /*padding-top:20px;*/
+  font-size:14px;
+  color:#333333;
+}
+.console-number{
+  color:#333333;
+}
+.console-header{
+  height:120px;
+  margin-left:-20px !important;
+  margin-right:-20px !important;
+  margin-bottom: 20px;
+  .console-dashboard{
+    padding:20px;
+    background: $consoleBgcolor;
+    text-align: left;
+    height:120px;
+    .console-dashboard-title{
+      padding-left:10px;
+      span{
+        color:#c0c9dd;
+        font-size:12px;
+      }
+    }
+    .console-dashboard-count{
+      text-align: center;
+      font-size:30px;
+      padding-top:25px;
+    }
+  }
+  .console-user-charge{
+    padding:15px;
+    height:120px;
+    background:$consoleBgcolor;
+    .console-title{
+      padding-top:0px;
+    }
+    .console-user-charge-numer{
+      text-align: center;
+      padding:20px 0;
+      .console-number{
+        font-size:25px;
+        padding-bottom:15px;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .console-user-cards{
+      >div{
+        background: $mainBackground;
+        width:120px;
+        height:25px;
+        line-height: 25px;
+        font-size:12px;
+        color:#a9b9c5;
+        text-align: center;
+        margin:3px;
+        cursor:pointer;
+        span{
+          padding:0 10px;
+          color:#666666;
+        }
+      }
+    }
+    .console-user-recharge{
+      color:#FFFFFF;
+      font-size:18px;
+      background: #F9CD76;
+      text-align: center;
+      line-height: 90px;
+      max-width:80px;
+      cursor: pointer;
+    }
+
+  }
+}
+.console-center{
+  background: $consoleBgcolor;
+  margin-bottom: 20px;
+  height: 250px;
+  padding:20px 10px;
+  .console-product-productsList{
+    height: 70px;
+    margin-top:20px;
+    .console-product-item{
+      height:100%;
+      background: $mainBackground;
+      cursor:pointer;
+      padding:0 25px;
+      >div{
+        display: table-cell;
+        vertical-align: middle;
+        height:70px;
+      }
+      .console-product-left{
+        /*padding-left:25px;*/
+        .console-product-img{
+          display: table-cell;
+          width:40px;
+          height:40px;
+          background: no-repeat center center;
+          background-size:contain;
+        }
+        .console-product-img-ebs{
+          background-image: url(../../assets/ecm/ebsIcon.png);
+        }
+        .console-product-img-ecm{
+          background-image: url(../../assets/ecm/ecmIcon.png);
+        }
+        .console-product-img-elb{
+          background-image: url(../../assets/ecm/elbIcon.png);
+        }
+        .console-product-img-eip{
+          background-image: url(../../assets/ecm/eipIcon.png);
+        }
+        .console-product-img-vpc{
+          background-image: url(../../assets/ecm/vpcIcon.png);
+        }
+        .console-product-img-ims{
+          background-image: url(../../assets/ecm/imsIcon.png);
+        }
+        .console-product-title{
+          padding-left:20px;
+          min-width:130px;
+          max-width:170px;
+          display: table-cell;
+          vertical-align: middle;
+          color:#333333;
+          font-size:16px;
+        }
+        .console-product-right{
+          font-size:16px;
+          color:#333333;
+        }
+      }
+    }
+  }
+}
+.console-footer{
+  margin-top:20px;
+  min-height:250px;
+  background: $consoleBgcolor;
+}

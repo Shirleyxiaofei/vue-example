@@ -1,0 +1,128 @@
+/*提示信息样式*/
+.el-message{
+    padding: 10px;
+    top:55px;
+}
+.el-message--success{
+	background: #e9f3f3;
+	border-color: #56d6c4;
+	.el-icon-success{
+		color: #56d6c4;
+	}
+	.el-message__content{
+		color: #3eb1a1;
+	}
+}
+.el-message--warning{
+	background: #f0f2f7;
+	border-color: #3ac0f1;
+	.el-icon-warning{
+		color: #3ac0f1;
+	}
+	.el-message__content{
+		color: #34afdc;
+	}
+}
+.el-message--error{
+	background: #f8eeef;
+	border-color: #f6585e;
+	.el-icon-error{
+		color: #f6585e;
+	}
+	.el-message__content{
+		color: #d44c51;
+	}
+}
+/*弹出框样式*/
+.el-message-box{
+	border: none;
+	padding-bottom: 0px;
+	width: auto;
+	min-width: 400px;
+	.el-message-box__header{
+		background: #323C4E;
+		.el-message-box__title{
+			color: #ffffff;
+			font-size: 14px;
+		}
+		.el-message-box__headerbtn{
+			.el-icon-close{
+				color: #ffffff;
+			}
+		}
+	}
+	.el-message-box__content{
+		padding: 20px 15px;
+	}
+	.el-message-box__btns{
+		padding: 0 0;
+		text-align: center;
+		.el-button{
+			width: 50%;
+			margin-left: 0;
+			border-radius: 0;
+			border: none;
+			height: 50px;
+		}
+		button:nth-child(1){
+			background: #f0f2f6;
+		}
+		button:nth-child(2){
+			background: #f8cd75;
+		}
+	}
+}
+/*表单左对齐必选对不齐的解决办法*/
+.content-required{
+    .el-form-item__label{
+        &:before{
+            content: '*';
+            color: transparent;
+            margin-right: 4px;
+        }
+    }
+    
+}
+/*tooltip透明度设置*/
+.el-tooltip__popper{
+    opacity: 0.6;
+}
+.el-table-filter{
+    text-align: center;
+}
+/*模块框*/
+.consoledialog{
+    .el-dialog__header{
+        background: #323C4E;
+        .el-dialog__title{
+            font-size: 14px;
+            color: #ffffff;
+        }
+        .el-dialog__headerbtn .el-dialog__close{
+            color: #ffffff;
+            
+        }
+    }
+    .el-dialog__footer{
+        text-align: center;
+        padding:0;
+    }
+}
+//table  filter样式
+.el-table-filter{
+    .el-table-filter__list{
+        padding: 0;
+        min-width: 40px;
+        .el-table-filter__list-item{
+            padding: 0 15px;
+            font-size: 12px;
+            line-height: 27px;
+        }
+    }
+}
+//table  tip样式
+.el-tooltip__popper{
+    max-width: 300px;
+    white-space: normal;
+    word-break:break-all;
+}
